@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:masud_demo/utills/all_colors.dart';
+import 'package:masud_demo/utills/all_strings.dart';
 String imgSrcAvatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCcemOrw8mSjbGRWPILUjf-J-VArHi54RO7A&usqp=CAU";
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -16,7 +18,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
      appBar: AppBar(
        centerTitle: true,
-      title: Text("MasudHasan"),
+      backgroundColor: AllColors.appBarClr,
+      title: Text(Allstrings.masudHasan),
      ),
       body: Column(
         children: [
@@ -49,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                        ),
                        Column(
                          children: [
-                           Text("3,405",
+                           Text(Allstrings.post3405,
                            style: TextStyle(
                              color: Colors.purple,
                              fontSize: 20,
@@ -57,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                            ),
                            ),
-                           Text("Fiar")
+                           Text(Allstrings.fiar)
 
                          ],
                        ),
@@ -66,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                        Column(
                          children: [
-                           Text("6.5k",
+                           Text(Allstrings.posts6_5k,
                            style: TextStyle(
                              color: Colors.purple,
                              fontSize: 20,
@@ -74,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                            ),
                            ),
-                           Text("Followers")
+                           Text(Allstrings.follower)
 
                          ],
                        ),
@@ -84,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                        Column(
                          children: [
-                           Text("431",
+                           Text(Allstrings.following,
                            style: TextStyle(
                              color: Colors.purple,
                              fontSize: 20,
@@ -92,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                            ),
                            ),
-                           Text("Posts")
+                           Text(Allstrings.followeng100_m)
 
                          ],
                        ),
@@ -107,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: const EdgeInsets.only(
                                 top: 5,bottom: 5,left: 25,right: 25,
                               ),
-                              child: Text("Message"),
+                              child: Text(Allstrings.message),
                             ),
                             decoration: BoxDecoration(
                               border: Border.all(
