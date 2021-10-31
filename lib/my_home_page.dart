@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:masud_demo/listview_page.dart';
+import 'package:masud_demo/log_in.dart';
+import 'package:masud_demo/secound_page.dart';
 import 'package:masud_demo/utills/all_colors.dart';
 import 'package:masud_demo/utills/all_strings.dart';
+import 'package:slide_drawer/slide_drawer.dart';
 String imgSrcAvatar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCcemOrw8mSjbGRWPILUjf-J-VArHi54RO7A&usqp=CAU";
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -17,12 +21,36 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
      appBar: AppBar(
+       leading: IconButton(
+         icon: Icon(Icons.menu),
+         // call toggle from SlideDrawer to alternate between open and close
+         // when pressed menu button
+         onPressed: () => SlideDrawer.of(context)!.toggle(),
+       ),
        centerTitle: true,
       backgroundColor: AllColors.appBarClr,
       title: Text(Allstrings.masudHasan),
      ),
       body: Column(
         children: [
+          SizedBox(
+            height: 4,
+          ),
+          ElevatedButton(
+              onPressed: (){
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=>LogIn()));
+              }, child: Text("LOG IN")
+          ),
+          SizedBox(
+            height: 8,
+          ),
+          ElevatedButton(
+              onPressed: (){
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>ListViewPage()));
+              }, child: Text("Go To Second Page")
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
