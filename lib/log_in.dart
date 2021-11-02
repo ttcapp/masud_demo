@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:masud_demo/my_home_page.dart';
 import 'package:masud_demo/utills/all_colors.dart';
 class LogIn extends StatefulWidget {
   const LogIn({Key? key}) : super(key: key);
@@ -8,6 +9,11 @@ class LogIn extends StatefulWidget {
   _LogInState createState() => _LogInState();
 }
 //for global variables
+String _email= "masudcho@gmail.com";
+String _password= "123456";
+TextEditingController emailCont= TextEditingController();
+TextEditingController passCont= TextEditingController();
+
 final _formKey= GlobalKey<FormState>();
 
 class _LogInState extends State<LogIn> {
@@ -37,6 +43,15 @@ class _LogInState extends State<LogIn> {
                     height: 19,
                   ),
                   TextFormField(
+                    controller: emailCont,
+                    validator: (text){
+                      if(text == null || text.isEmpty){
+                        return "The Field is Empty";
+                      }
+                      else if(text != _email){
+                        return "Invalid Email";
+                      }
+                    },
                     autofocus: true,
                   decoration: InputDecoration(
                     labelText: "Email",
@@ -56,6 +71,15 @@ class _LogInState extends State<LogIn> {
                   ),
                   SizedBox(height: 20,),
                   TextFormField(
+                    controller: passCont,
+                    validator: (text){
+                      if(text == null || text.isEmpty){
+                        return "The Field is Empty";
+                      }
+                      else if(text != _password){
+                        return "Invalid Password";
+                      }
+                    },
                     obscureText: true,
                     autofocus: true,
                   decoration: InputDecoration(
@@ -81,6 +105,13 @@ class _LogInState extends State<LogIn> {
                      primary: AllColors.appThemeClr
                    ),
                      onPressed: () {
+
+                     if(_formKey.currentState!.validate()){
+                       Navigator.push(context,
+                       MaterialPageRoute(builder: (context)
+                           =>MyHomePage(),
+                       ),);
+                     }
 
                      },
                    child: Container(
