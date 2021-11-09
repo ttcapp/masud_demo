@@ -13,6 +13,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
+
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
@@ -44,12 +45,19 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           SizedBox(
             height: 8,
+            width: 4,
           ),
           ElevatedButton(
               onPressed: (){
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context)=>ListViewPage()));
               }, child: Text("Go To Second Page")
+          ),
+          ElevatedButton(
+              onPressed: (){
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>ListViewPage()));
+              }, child: Text("Sign Up")
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
