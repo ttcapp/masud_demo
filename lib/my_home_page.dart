@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:masud_demo/listview_page.dart';
 import 'package:masud_demo/log_in.dart';
 import 'package:masud_demo/secound_page.dart';
+import 'package:masud_demo/third_page.dart';
 import 'package:masud_demo/utills/all_colors.dart';
 import 'package:masud_demo/utills/all_strings.dart';
 import 'package:slide_drawer/slide_drawer.dart';
@@ -40,8 +41,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ElevatedButton(
               onPressed: (){
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context)=>LogIn()));
-              }, child: Text("LOG IN")
+                  MaterialPageRoute(builder: (context)=>SecondPage()));
+              }, child: Text("Md")
           ),
           SizedBox(
             height: 8,
@@ -53,11 +54,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(builder: (context)=>ListViewPage()));
               }, child: Text("Go To Second Page")
           ),
+          SizedBox(
+            height: 8,
+
+          ),
           ElevatedButton(
               onPressed: (){
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=>ListViewPage()));
-              }, child: Text("Sign Up")
+                    MaterialPageRoute(builder: (context)=>ThirdPage()));
+              }, child: Text("Prees")
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),

@@ -12,31 +12,34 @@ class ListViewPage extends StatefulWidget {
   _ListViewPageState createState() => _ListViewPageState();
 }
 List<String> stdName=[
-  "Masud",
-  "Masum",
-  "Jakaria",
-  "Josim",
-  "Imran",
-  "Bisnu",
-  "Chinmoy"
+  "Nasrullah Chowdhury",
+  "Ataullah",
+  "Younus",
+  "Tamim",
+  "Shofi",
+  "Shohidul",
+  "Rasel",
+  "Sufian"
 ];
 List<String> stdDetails=[
-  "I am Masud.I am 18 years old",
+  "I am Nasrullah Chowdhury.I am 18 years old",
   "I am Masum.I am 18 years old",
-  "I am Jakaria.I am 18 years old",
-  "I am Josim.I am 18 years old",
-  "I am Imran.I am 18 years old",
-  "I am Bisnu.I am 18 years old",
-  "I am Chinmoy.I am 18 years old"
+  "I am Younus.I am 18 years old",
+  "I am Tamim.I am 18 years old",
+  "I am Shofi.I am 18 years old",
+  "I am Shohidul.I am 18 years old",
+  "I am Rasel.I am 18 years old",
+  "I am Sufian.I am 18 years old"
 ];
 List<String> stdImg=[
-  "Masud",
-  "Masum",
-  "Jakaria",
-  "Josim",
-  "Imran",
-  "Bisnu",
-  "Chinmoy"
+  "assets/images/images9.jpg",
+  "assets/images/images1.jpg",
+  "assets/images/images2.jpg",
+  "assets/images/images3.jpg",
+  "assets/images/images4.jpg",
+  "assets/images/images5.jpg",
+  "assets/images/images6.jpg",
+  "assets/images/images10.jpg"
 ];
 final List<String> imgList = [
   'https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff92caffcdd63681a35134a6770ed3b&auto=format&fit=crop&w=1951&q=80',
@@ -47,21 +50,23 @@ final List<String> imgList = [
   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
 ];
 StudentDetails std1= StudentDetails
-  ("Masud", "1001", "01873463585", "sason", "18");
+  ("Md Nasrullah Chowdhury", "01", "01873463585", "Sason", "18","masudcho79@gmail.com");
 StudentDetails std2= StudentDetails
-  ("Masum", "1002", "01873463585", "khati", "25");
+  ("Md Ataullah Chowdhury", "02", "01873463585", "Gobra", "17","a");
 StudentDetails std3= StudentDetails
-  ("Jakaria", "1003", "01873463585", "Ghonapara", "35");
+  ("Md Younus Chowdhury", "03", "01873463585", "Gobra", "19","r");
 StudentDetails std4= StudentDetails
-  ("Josim", "1004", "01873463585", "Gobra", "26");
+  ("Md Tamim Hasan", "04", "01873463585", "Gemadanga", "17","d");
 StudentDetails std5= StudentDetails
-  ("Imran", "1005", "01873463585", "Ghonapara", "27");
+  ("Md Ahmad Shofi", "05", "01873463585", "Gobra", "17","n");
 StudentDetails std6= StudentDetails
-  ("Bisnu", "1006", "01873463585", "Ghonapara", "22");
+  ("Md Shohidul Islam", "06", "01873463585", "Ghonapara", "17","b");
 StudentDetails std7= StudentDetails
-  ("Chinmoy", "1007", "01873463585", "Ghonapara", "21");
+  ("Md Rasel Shikdar", "07", "01873463585", "Nilfa", "16","g");
+StudentDetails std8= StudentDetails
+  ("Md Sufian", "08", "01873463585", "Pataliah", "17","n");
 List<StudentDetails> stdDetailsList=[
-  std1,std2,std3,std4,std5,std6,std7
+  std1,std2,std3,std4,std5,std6,std7,std8
 ];
 class _ListViewPageState extends State<ListViewPage> {
   @override
@@ -69,7 +74,7 @@ class _ListViewPageState extends State<ListViewPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("List View Page"),
+        title: Text("Winner Page"),
       ),
       body: Column(
         children: [
@@ -90,8 +95,8 @@ class _ListViewPageState extends State<ListViewPage> {
           ),
           Padding(
            padding: const EdgeInsets.all(8.0),
-           child: Text("The name of students of Batch-D",
-               style:TextStyle(fontSize: 30,
+           child: Text("The name of students of Jamate Mejan 2021",
+               style:TextStyle(fontSize: 20,
                  color: Colors.blue
                ),
             ),

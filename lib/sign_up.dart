@@ -10,13 +10,10 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("Sign Up"),
-      ),
-      body: Container(
 
-      ),
     );
   }
 }
+
+
+

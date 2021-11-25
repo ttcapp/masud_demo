@@ -28,14 +28,14 @@ class _StdDetailsState extends State<StdDetails> {
               padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
-                  Text("Name : ",
+                  Text("Name :  ",
                     style: TextStyle(
-                      color: Colors.deepPurple,fontSize:50,
+                      color: Colors.deepPurple,fontSize:25,
                     ),
                   ),
                   Text(widget.stdObj.name,
                   style: TextStyle(
-                   color: Colors.deepPurple,fontSize:50,
+                   color: Colors.deepPurple,fontSize:25,
                   ),
             ),
                 ],
@@ -47,12 +47,12 @@ class _StdDetailsState extends State<StdDetails> {
             children: [
               Text("Id : ",
                 style: TextStyle(
-                  color: Colors.pink,fontSize:30,
+                  color: Colors.pink,fontSize:20,
                 ),
               ),
               Text(widget.stdObj.id,
                 style: TextStyle(
-                  color: Colors.pink,fontSize:30,
+                  color: Colors.pink,fontSize:20,
                 ),
               ),
             ],
@@ -64,12 +64,12 @@ class _StdDetailsState extends State<StdDetails> {
             children: [
               Text("Numbar : ",
                 style: TextStyle(
-                  color: Colors.purple,fontSize:30,
+                  color: Colors.purple,fontSize:20,
                 ),
               ),
               Text(widget.stdObj.number,
                 style: TextStyle(
-                  color: Colors.purple,fontSize:30,
+                  color: Colors.purple,fontSize:20,
                 ),
               ),
             ],
@@ -81,12 +81,12 @@ class _StdDetailsState extends State<StdDetails> {
             children: [
               Text("Address : ",
                 style: TextStyle(
-                  color: Colors.indigo,fontSize:30,
+                  color: Colors.indigo,fontSize:20,
                 ),
               ),
               Text(widget.stdObj.address,
                 style: TextStyle(
-                  color: Colors.indigo,fontSize:30,
+                  color: Colors.indigo,fontSize:20,
                 ),
               ),
             ],
@@ -98,12 +98,12 @@ class _StdDetailsState extends State<StdDetails> {
             children: [
               Text("Age : ",
                 style: TextStyle(
-                  color: Colors.blue,fontSize:30,
+                  color: Colors.blue,fontSize:20,
                 ),
               ),
               Text(widget.stdObj.age,
                 style: TextStyle(
-                  color: Colors.blue,fontSize:30,
+                  color: Colors.blue,fontSize:20,
                 ),
               ),
             ],
